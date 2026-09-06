@@ -3,12 +3,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Remauto Detailing | Профессиональный детейлинг в Праге</title>
+  <title>Remauto Detailing | Детейлинг в Праге</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- Шапка и Первый экран (Hero) -->
+  <!-- Первый экран -->
   <header class="hero">
     <div class="container">
       <div class="top-bar">
@@ -27,6 +27,74 @@
       </div>
     </div>
   </header>
+
+  <!-- Модальное окно Квиза -->
+  <div id="quiz-modal" class="modal">
+    <div class="modal-content">
+      <button class="modal-close" id="close-quiz">&times;</button>
+
+      <!-- Прогресс-бар -->
+      <div class="quiz-progress">
+        <div class="progress-bar" id="progress-bar"></div>
+      </div>
+
+      <!-- Шаг 1: Класс кузова -->
+      <div class="quiz-step active" data-step="1">
+        <h2>Шаг 1 из 3: Выберите тип кузова</h2>
+        <div class="options-grid">
+          <div class="quiz-option" data-value="Седан / Хэтчбек">
+            <span class="icon">🚗</span>
+            <span>Седан / Хэтчбек</span>
+          </div>
+          <div class="quiz-option" data-value="Кроссовер / Универсал">
+            <span class="icon">🚙</span>
+            <span>Кроссовер / Универсал</span>
+          </div>
+          <div class="quiz-option" data-value="Внедорожник / Минивэн">
+            <span class="icon">🚐</span>
+            <span>Внедорожник / Минивэн</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Шаг 2: Главная задача -->
+      <div class="quiz-step" data-step="2">
+        <h2>Шаг 2 из 3: Какая основная задача?</h2>
+        <div class="options-grid">
+          <div class="quiz-option" data-value="Восстановление блеска">✨ Восстановление блеска и полировка</div>
+          <div class="quiz-option" data-value="Защита керамикой/пленкой">🛡️ Защита нового авто (Керамика/PPF)</div>
+          <div class="quiz-option" data-value="Химчистка салона">🧼 Глубокая химчистка салона</div>
+          <div class="quiz-option" data-value="Комплекс Кузов + Салон">👑 Комплексный детейлинг «Под ключ»</div>
+        </div>
+      </div>
+
+      <!-- Шаг 3: Состояние ЛКП -->
+      <div class="quiz-step" data-step="3">
+        <h2>Шаг 3 из 3: Оцените состояние авто</h2>
+        <div class="options-grid">
+          <div class="quiz-option" data-value="Новое / Идеальное">🟢 Новое или близкое к идеальному</div>
+          <div class="quiz-option" data-value="Есть паутинка и мелкая риска">🟡 Есть мелкие царапины и паутинка</div>
+          <div class="quiz-option" data-value="Сильный износ / Глубокие царапины">🔴 Сильный износ ЛКП / Затертости</div>
+        </div>
+      </div>
+
+      <!-- Шаг 4: Финал и контакты -->
+      <div class="quiz-step" data-step="4">
+        <h2>Расчет стоимости почти готов!</h2>
+        <p class="bonus-note">🎁 За вами зафиксирован бонус: <strong>Защитный кондиционер для кожи в подарок</strong> при записи.</p>
+        
+        <form id="quiz-form">
+          <div class="form-group">
+            <label for="contact-input">Ваш телефон или Ник в Telegram/WhatsApp:</label>
+            <input type="text" id="contact-input" placeholder="+420... или @username" required>
+          </div>
+          
+          <button type="submit" class="btn btn-primary btn-block">Получить расчет и подарок</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
