@@ -1,6 +1,6 @@
 // НАСТРОЙКИ TELEGRAM (Вставь свои данные)
-const TELEGRAM_TOKEN = 'ТВОЙ_TELEGRAM_TOKEN';
-const TELEGRAM_CHAT_ID = 'ТВОЙ_CHAT_ID';
+const TELEGRAM_TOKEN = '8790508530:AAHjaqnioQmq3hZ9hjfoVNHzzIR3yN2hlzY';
+const TELEGRAM_CHAT_ID = '455847452';
 
 // Переменные состояния
 let currentStep = 1;
